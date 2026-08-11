@@ -1,5 +1,5 @@
 import React from "react";
-import {ActivityIndicator, Image, StyleSheet, Text, TouchableOpacity} from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity} from "react-native";
 
 interface Props {
     title: string;

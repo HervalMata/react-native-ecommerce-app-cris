@@ -6,7 +6,6 @@ import AuthHeader from "../../components/auth/AuthHeader";
 import AuthInput from "../../components/auth/AuthInput";
 import PrimaryButton from "../../components/auth/PrimaryButton";
 import PasswordInput from "../../components/auth/PasswordInput";
-// @ts-ignore
 import SocialButton from "../../components/auth/SocialButton";
 
 import useTheme from "@/hooks/useTheme";
@@ -67,7 +66,7 @@ export default function RegisterScreen() {
 
                         <AuthInput
                             label="Email"
-                            placeholder="Seu E#mail"
+                            placeholder="Seu Email"
                             value={email}
                             onChangeText={setEmail}
                             keyboardType="email-address"

@@ -3,12 +3,10 @@ import { SafeAreaView, StyleSheet } from "react-native";
 
 import { useRouter } from "expo-router";
 
-// @ts-ignore
 import BestSellerGrid from "../components/bestsellers/BestSellerGrid";
-// @ts-ignore
 import BestSellerHeader from "../components/bestsellers/BestSellerHeader";
 
-import { bestSellers } from "../data/bestSellers";
+import { bestSellers } from "@/data/bestSellers";
 
 export default function BestSellersScreen() {
     const router = useRouter();
