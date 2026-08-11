@@ -6,7 +6,7 @@ interface Props {
     onPress: () => void;
     loading?: boolean;
     disabled?: boolean;
-    colors?: any;
+    colors: any;
 }
 
 export default function PrimaryButton({ title, onPress, loading = false, disabled = false, colors }: Props) {

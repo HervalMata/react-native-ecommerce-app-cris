@@ -61,7 +61,7 @@ export default function LoginScreen() {
                     <View style={styles.form}>
                         <AuthInput
                             label="Email"
-                            placeholder="Seu E#mail"
+                            placeholder="Seu Email"
                             value={email}
                             onChangeText={setEmail}
                             keyboardType="email-address"

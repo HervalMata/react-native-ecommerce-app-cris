@@ -44,7 +44,7 @@ export default function ForgotPasswordScreen() {
                     <AuthHeader
                         title="Recuperar Senha"
                         subtitle={
-                            "Por favor digite seu email para Receber um código de verificalção"
+                            "Por favor digite seu email para receber um código de verificalção"
                         }
                         colors={colors}
                     />
