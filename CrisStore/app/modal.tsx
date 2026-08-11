@@ -8,7 +8,7 @@ export default function ModalScreen() {
     return (
         <ThemedView style={styles.container}>
             <ThemedText type="title">Este é um modal</ThemedText>
-            <Link href="/" dismissTo style={styles.link}>
+            <Link href="/(tabs)" dismissTo style={styles.link}>
                 <ThemedText type="link">Vá para a tela principal</ThemedText>
             </Link>
         </ThemedView>

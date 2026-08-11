@@ -2,15 +2,10 @@ import { useRouter } from "expo-router";
 import React, { useState } from "react";
 import { KeyboardAvoidingView, Platform, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 
-// @ts-ignore
 import AuthHeader from "../../components/auth/AuthHeader";
-// @ts-ignore
 import AuthInput from "../../components/auth/AuthInput";
-// @ts-ignore
 import PrimaryButton from "../../components/auth/PrimaryButton";
-// @ts-ignore
 import PasswordInput from "../../components/auth/PasswordInput";
-// @ts-ignore
 import SocialButton from "../../components/auth/SocialButton";
 
 import useTheme from "@/hooks/useTheme";
@@ -60,7 +55,7 @@ export default function LoginScreen() {
                         subtitle={
                             "Preencha seus dados ou continue com uma rede social"
                         }
-                        color={colors}
+                        colors={colors}
                     />
 
                     <View style={styles.form}>
@@ -70,7 +65,7 @@ export default function LoginScreen() {
                             value={email}
                             onChangeText={setEmail}
                             keyboardType="email-address"
-                            color={colors}
+                            colors={colors}
                         />
 
                         <PasswordInput
@@ -78,7 +73,7 @@ export default function LoginScreen() {
                             placeholder="Sua Senha"
                             value={password}
                             onChangeText={setPassword}
-                            color={colors}
+                            colors={colors}
                         />
 
                         <TouchableOpacity
@@ -88,7 +83,7 @@ export default function LoginScreen() {
                             <Text
                                 style={[
                                     styles.forgot,
-                                    { color: colors.subtext }
+                                    { color: colors.subText }
                                 ]}
                             >
                                 Recuperar A Senha
@@ -99,7 +94,7 @@ export default function LoginScreen() {
                             title="Entrar"
                             loading={loading}
                             onPress={handleLogin}
-                            color={colors}
+                            colors={colors}
                         />
 
                         <View style={styles.orContainer}>
@@ -115,7 +110,7 @@ export default function LoginScreen() {
                             <Text
                                 style={[
                                     styles.or,
-                                    { color: colors.subtext }
+                                    { color: colors.subText }
                                 ]}
                             >
                                 Ou Continue com
@@ -134,14 +129,14 @@ export default function LoginScreen() {
                                 title="Entrar com Google"
                                 image={require("../../assets/icons/google.png")}
                                 onPress={handleGoogleLogin}
-                                color={colors}
+                                colors={colors}
                             />
 
                             <View style={styles.bottom}>
                                 <Text style={[
                                     styles.bottomText,
                                     {
-                                        color: colors.subtext ,
+                                        color: colors.subText ,
                                     }
                                 ]}
                                 >
@@ -176,7 +171,7 @@ const styles = StyleSheet.create({
         paddingBottom: 40,
     },
     form: {
-        marginTop: 52,
+        marginTop: 20,
         paddingHorizontal: 24,
     },
     forgotContainer: {
@@ -189,7 +184,7 @@ const styles = StyleSheet.create({
     },
     orContainer: {
         alignItems: "center",
-        flexDirection: "row",
+        flexDirection: "column",
         marginTop: 35,
     },
     line: {
@@ -201,7 +196,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
     },
     bottom: {
-        marginTop: 35,
+        marginTop: 20,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",

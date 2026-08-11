@@ -2,13 +2,9 @@ import { useRouter } from "expo-router";
 import React, { useState } from "react";
 import { KeyboardAvoidingView, Platform, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 
-// @ts-ignore
 import AuthHeader from "../../components/auth/AuthHeader";
-// @ts-ignore
 import AuthInput from "../../components/auth/AuthInput";
-// @ts-ignore
 import PrimaryButton from "../../components/auth/PrimaryButton";
-// @ts-ignore
 import PasswordInput from "../../components/auth/PasswordInput";
 // @ts-ignore
 import SocialButton from "../../components/auth/SocialButton";
@@ -57,7 +53,7 @@ export default function RegisterScreen() {
                         subtitle={
                             "Vamos criar uma conta juntos"
                         }
-                        color={colors}
+                        colors={colors}
                     />
 
                     <View style={styles.form}>
@@ -66,7 +62,7 @@ export default function RegisterScreen() {
                             placeholder="Seu Nome"
                             value={name}
                             onChangeText={setName}
-                            color={colors}
+                            colors={colors}
                         />
 
                         <AuthInput
@@ -75,7 +71,7 @@ export default function RegisterScreen() {
                             value={email}
                             onChangeText={setEmail}
                             keyboardType="email-address"
-                            color={colors}
+                            colors={colors}
                         />
 
                         <PasswordInput
@@ -83,21 +79,21 @@ export default function RegisterScreen() {
                             placeholder="******"
                             value={password}
                             onChangeText={setPassword}
-                            color={colors}
+                            colors={colors}
                         />
 
                         <PrimaryButton
                             title="Cadastrar"
                             loading={loading}
                             onPress={handleRegister}
-                            color={colors}
+                            colors={colors}
                         />
 
                         <SocialButton
                             title="Entrar com Google"
                             image={require("../../assets/icons/google.png")}
                             onPress={() => {}}
-                            color={colors}
+                            colors={colors}
                         />
 
                         <View style={styles.bottom}>
@@ -138,7 +134,7 @@ const styles = StyleSheet.create({
         paddingBottom: 40,
     },
     form: {
-        marginTop: 52,
+        marginTop: 20,
         paddingHorizontal: 24,
     },
     bottom: {

@@ -2,11 +2,8 @@ import { useRouter } from "expo-router";
 import React, { useState } from "react";
 import {KeyboardAvoidingView, Platform, SafeAreaView, ScrollView, StyleSheet, View} from "react-native";
 
-// @ts-ignore
 import AuthHeader from "../../components/auth/AuthHeader";
-// @ts-ignore
 import AuthInput from "../../components/auth/AuthInput";
-// @ts-ignore
 import PrimaryButton from "../../components/auth/PrimaryButton";
 
 import useTheme from "@/hooks/useTheme";
@@ -47,19 +44,19 @@ export default function ForgotPasswordScreen() {
                     <AuthHeader
                         title="Recuperar Senha"
                         subtitle={
-                            "Por favor digite seu email para\nReceber um código de verificalção"
+                            "Por favor digite seu email para Receber um código de verificalção"
                         }
-                        color={colors}
+                        colors={colors}
                     />
 
                     <View style={styles.form}>
                         <AuthInput
                             label="Email"
-                            placeholder="Seu E#mail"
+                            placeholder="Seu Email"
                             value={email}
                             onChangeText={setEmail}
                             keyboardType="email-address"
-                            color={colors}
+                            colors={colors}
                         />
 
                         <View style={{ height: 38 }} />
@@ -68,7 +65,7 @@ export default function ForgotPasswordScreen() {
                             title="Continuar"
                             loading={loading}
                             onPress={handleContinue}
-                            color={colors}
+                            colors={colors}
                         />
                     </View>
                 </ScrollView>
