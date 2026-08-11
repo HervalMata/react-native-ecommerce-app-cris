@@ -40,7 +40,7 @@ export default function HomeScreen() {
                     <Link.Menu>
                         <Link.MenuAction title="Ação" icon="cube" onPress={() => alert('Ação Pressionada')} />
                         <Link.MenuAction title="Trocar" icon="square.and.arrow.up" onPress={() => alert('Trocar Pressionada')} />
-                        <Link.Menu title="Mais" icon="ellipis">
+                        <Link.Menu title="Mais" icon="ellipsis">
                             <Link.MenuAction title="Remover" icon="trash" destructive onPress={() => alert('Remover pressionado')} />
                         </Link.Menu>
                     </Link.Menu>

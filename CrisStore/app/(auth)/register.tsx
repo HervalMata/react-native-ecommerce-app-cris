@@ -104,7 +104,7 @@ export default function RegisterScreen() {
                             <Text style={[
                                 styles.bottomText,
                                 {
-                                    color: colors.subtext ,
+                                    color: colors.subText ,
                                 }
                             ]}
                             >
