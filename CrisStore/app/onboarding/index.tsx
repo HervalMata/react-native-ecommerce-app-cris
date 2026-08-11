@@ -43,7 +43,7 @@ export default function OnboardingScreen() {
             });
         } else {
             await completeOnboarding();
-            router.replace("//(auth)/login");
+            router.replace("/(auth)/login");
         }
     }
 
