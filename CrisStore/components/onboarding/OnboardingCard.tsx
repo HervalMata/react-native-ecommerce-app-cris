@@ -33,7 +33,7 @@ export default function OnboardingCard({ item, colors}: Props) {
             ])
         ).start();
         Animated.sequence([
-            Animated.timing(floatAnim, {
+            Animated.timing(fadeAnim, {
                 toValue: 1,
                 duration: 700,
                 useNativeDriver: true,

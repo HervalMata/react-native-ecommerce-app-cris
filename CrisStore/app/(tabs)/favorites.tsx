@@ -7,7 +7,7 @@ import FavouriteGrid from "../../components/favourite/FavouriteGrid";
 // @ts-ignore
 import FavouriteHeader from "../../components/favourite/FavouriteHeader";
 
-import { favourites } from "../../data/favourites";
+import { favourites } from "@/data/favourites";
 
 export default function FavoriteScreen() {
     const router = useRouter();
