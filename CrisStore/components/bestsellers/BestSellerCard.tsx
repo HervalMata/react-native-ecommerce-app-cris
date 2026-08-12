@@ -6,7 +6,7 @@ export default function BestSellerCard({ item, onPress }: any) {
         <TouchableOpacity
             activeOpacity={0.9}
             style={styles.card}
-            onPress={onPress(item)}>
+            onPress={() => onPress(item)}>
             <Image source={item.image} style={styles.image} resizeMode="contain" />
             <Text style={styles.bestSeller}>
                 Mais Vendidos

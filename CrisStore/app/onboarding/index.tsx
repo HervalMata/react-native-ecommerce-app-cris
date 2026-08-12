@@ -1,20 +1,15 @@
 import { useRouter } from "expo-router";
 import React, {useRef, useState} from "react";
-import { Animated, Dimensions, FlatList, StyleSheet, View} from "react-native";
+import { Animated, FlatList, StyleSheet, View} from "react-native";
 
 import { completeOnboarding } from "@/utils/storage";
 
-// @ts-ignore
 import NextButton from "../../components/onboarding/NextButton";
-// @ts-ignore
 import OnboardingCard from "../../components/onboarding/OnboardingCard";
-// @ts-ignore
 import PaginationDots from "../../components/onboarding/PaginationDots";
 
 import { LightColors } from "@/constants/Colors";
 import { onboardingData } from "@/constants/onboardingData";
-
-const { width } = Dimensions.get("window");
 
 export default function OnboardingScreen() {
     const router = useRouter();
@@ -23,7 +18,7 @@ export default function OnboardingScreen() {
 
     const flatListRef = useRef<FlatList>(null);
 
-    const scroolX = useRef(new Animated.Value(0)).current;
+    const scrollX = useRef(new Animated.Value(0)).current;
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -73,7 +68,7 @@ export default function OnboardingScreen() {
                     {
                         nativeEvent: {
                             contentOffset: {
-                                x: scroolX,
+                                x: scrollX,
                             }
                         }
                     }
@@ -86,7 +81,7 @@ export default function OnboardingScreen() {
             <View style={styles.footer}>
                 <PaginationDots
                     data={onboardingData}
-                    scrollX={scroolX}
+                    scrollX={scrollX}
                     colors={colors}
                 />
 
