@@ -1,11 +1,8 @@
 import React from "react";
 import { SafeAreaView, ScrollView, StyleSheet } from "react-native";
 
-// @ts-ignore
 import CartHeader from "../components/cart/CartHeader";
-// @ts-ignore
 import CartItem from "../components/cart/CartItem";
-// @ts-ignore
 import CartSummary from "../components/cart/CartSummary";
 
 const cartItems = [
@@ -34,6 +31,7 @@ const cartItems = [
 ]
 
 export default function CartScreen() {
+
     return (
         <SafeAreaView style={styles.container}>
             <CartHeader />
