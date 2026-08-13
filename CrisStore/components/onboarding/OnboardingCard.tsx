@@ -44,7 +44,7 @@ export default function OnboardingCard({ item, colors}: Props) {
                 useNativeDriver: true,
             }),
         ]).start();
-    }, []);
+    }, [fadeAnim, floatAnim, slideAnim]);
     return (
         <View style={[
             styles.container,

@@ -3,20 +3,14 @@ import { SafeAreaView, ScrollView, StyleSheet, View} from "react-native";
 
 import useTheme from "@/hooks/useTheme";
 
-// @ts-ignore
 import BottomPriceBar from "../../components/details/BottomPriceBar";
-// @ts-ignore
 import DetailsHeader from "../../components/details/DetailsHeader";
-// @ts-ignore
 import GallerySection from "../../components/details/GallerySection";
-// @ts-ignore
 import ProductInfo from "../../components/details/ProductInfo";
-// @ts-ignore
 import ShoePreview from "../../components/details/ShoePreview";
-// @ts-ignore
 import SizeSelector from "../../components/details/SizeSelector";
 
-import { product } from "../../constants/product";
+import { product } from "@/constants/product";
 
 export default function DetailsScreen() {
     // @ts-ignore
@@ -33,9 +27,11 @@ export default function DetailsScreen() {
                 }
             ]}
         >
+            <DetailsHeader />
             <ScrollView
                 showsVerticalScrollIndicator={false}
             >
+
                 <ShoePreview image={product.image} />
 
                 <View
@@ -46,7 +42,9 @@ export default function DetailsScreen() {
                         marginLeft: 20,
                     }}
                 >
-                    <ProductInfo product={product} />
+
+                    <ProductInfo
+                        product={product} />
 
                     <GallerySection images={product.gallery} />
 

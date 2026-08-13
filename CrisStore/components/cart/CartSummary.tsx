@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function CartSummary() {
@@ -30,7 +30,7 @@ export default function CartSummary() {
                     Total
                 </Text>
                 <Text style={styles.totalValue}>
-                    R$ 1299,90
+                    R$ 1290,90
                 </Text>
             </View>
             {/* Checkout Button */}
